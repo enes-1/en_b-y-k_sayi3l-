@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int a, b, c;
+ printf("3 adet tam sayi giriniz:");
+ scanf("%d%d%d", &a, &b, &c);
+ printf("Girilen sayilarin en buyugu: %d\n", eb(a, b, c));
+
+}
+int eb(int x, int y, int z )
+{ int ebs = x;
+ if ( y > ebs )
+ ebs = y;
+ if ( z > ebs )
+ ebs = z;
+ return ebs;
+}
